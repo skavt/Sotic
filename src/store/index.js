@@ -1,5 +1,6 @@
 import Vuex from "vuex";
 import Vue from 'vue';
+import home from './home'
 
 Vue.use(Vuex);
 
@@ -8,5 +9,7 @@ export default new Vuex.Store({
   getters: {},
   actions: {},
   mutations: {},
-  modules: {}
+  modules: {
+    home
+  }
 });
