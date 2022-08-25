@@ -1,16 +1,9 @@
-import moment from 'moment';
-
 class Formatter {
-  static toDate(value, format) {
-    if (format) {
-      return moment(value).format(format);
-    } else {
-      return moment(value).format(SYSTEM_DATE_FORMAT);
-    }
+  static toUpperCaseFirst(value) {
+    return value ? value.charAt(0).toUpperCase() + value.slice(1) : '';
   }
 }
 
 export {
   Formatter
 };
-export const SYSTEM_DATE_FORMAT = 'DD MMMM YYYY';
