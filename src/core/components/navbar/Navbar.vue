@@ -1,5 +1,5 @@
 <template>
-  <b-navbar v-if="isSmallScreen">
+  <b-navbar v-if="isSmallScreen" sticky>
     <b-navbar-brand class="p-0">
       <b-img src="assets/logo.svg" alt="logo" width="100" height="25" class="mr-2"></b-img>
     </b-navbar-brand>
@@ -8,24 +8,24 @@
         <template slot="button-content">
           <i class="fas fa-bars"/>
         </template>
-        <b-dropdown-item href="#about">About</b-dropdown-item>
-        <b-dropdown-item href="#squads">Squads</b-dropdown-item>
-        <b-dropdown-item href="#tickets">Tickets</b-dropdown-item>
-        <b-dropdown-item href="#support">Support</b-dropdown-item>
-        <b-dropdown-item href="#membership">Membership</b-dropdown-item>
-        <b-dropdown-item href="#contact">Contact</b-dropdown-item>
+        <b-dropdown-item href="#">About</b-dropdown-item>
+        <b-dropdown-item href="#">Squads</b-dropdown-item>
+        <b-dropdown-item href="#">Tickets</b-dropdown-item>
+        <b-dropdown-item href="#">Support</b-dropdown-item>
+        <b-dropdown-item href="#">Membership</b-dropdown-item>
+        <b-dropdown-item href="#">Contact</b-dropdown-item>
       </b-nav-item-dropdown>
     </b-navbar-nav>
   </b-navbar>
   <b-navbar v-else>
     <b-navbar-nav class="mr-auto ml-auto">
       <b-img src="assets/logo.svg" alt="logo" width="100" height="50" class="mr-2"></b-img>
-      <b-nav-item href="#about">About</b-nav-item>
-      <b-nav-item href="#squads">Squads</b-nav-item>
-      <b-nav-item href="#tickets">Tickets</b-nav-item>
-      <b-nav-item href="#support">Support</b-nav-item>
-      <b-nav-item href="#membership">Membership</b-nav-item>
-      <b-nav-item href="#contact">Contact</b-nav-item>
+      <b-nav-item href="#">About</b-nav-item>
+      <b-nav-item href="#">Squads</b-nav-item>
+      <b-nav-item href="#">Tickets</b-nav-item>
+      <b-nav-item href="#">Support</b-nav-item>
+      <b-nav-item href="#">Membership</b-nav-item>
+      <b-nav-item href="#">Contact</b-nav-item>
     </b-navbar-nav>
     <b-navbar-nav class="mr-auto">
       <b-img src="assets/facebook.svg" alt="facebook-logo" width="20" height="50" class="mr-2"></b-img>
@@ -69,7 +69,7 @@
 
       > .nav-item {
         > .nav-link:hover {
-          color: grey;
+          color: wheat;
           font-size: 14px;
         }
       }
@@ -92,6 +92,7 @@
       /deep/ .nav-link {
         font-size: 18px;
         outline: none;
+        padding: 5px 5px 0 0;
       }
     }
   }

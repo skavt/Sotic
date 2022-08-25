@@ -1,11 +1,7 @@
 import axios from 'axios';
 import Vue from "vue";
 
-let config = {
-  baseURL: process.env.API_HOST,
-};
-
-const axiosClient = axios.create(config);
+const axiosClient = axios.create();
 
 axiosClient.interceptors.request.use(config => {
   return config;

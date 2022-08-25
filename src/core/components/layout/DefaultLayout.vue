@@ -1,18 +1,21 @@
 <template>
   <div id="menu-content-wrapper">
     <navbar/>
-    <div id="content" class="d-flex justify-content-between">
-      <router-view/>
+    <div id="content">
+      <home/>
+      <footer-layout/>
     </div>
   </div>
 </template>
 
 <script>
   import Navbar from "../navbar/Navbar";
+  import Home from "@/modules/home/Home";
+  import FooterLayout from "@/core/components/footer/FooterLayout";
 
   export default {
     name: "DefaultLayout",
-    components: {Navbar},
+    components: {FooterLayout, Home, Navbar},
   }
 </script>
 
@@ -35,7 +38,7 @@
   #content {
     flex: 1;
     position: relative;
-    overflow: hidden;
-    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 </style>
